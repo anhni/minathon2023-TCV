@@ -338,8 +338,8 @@ $_SESSION['callFrom'] = "index.php";
                               grid-column-gap: 1px;
                               grid-row-gap: 1px;">');
                               while($img =  $result->fetch_assoc()){
-                                if ($img['image_content'] != 0){
-                                  echo('<img class="img-responsive pad" src="uploads/post/' . $img['image_content']. '" alt="Photo" style="display:flex">');
+                                if ($img['image_content'] != ""){
+                                  echo('<img class="img-responsive pad" src="uploads/' . $img['image_content']. '" alt="Photo" style="display:flex">');
                                 }
                               }
                               echo("</div>");
